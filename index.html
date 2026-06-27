@@ -3,38 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介</title>
-		<!-- reset.css ress -->
-		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Home | Ryota's Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="body">
+
+<body>
+
+    <!-- ヘッダー -->
     <header class="header">
+        <div class="logo">
+            <h1>RYOTA'S PORTFOLIO</h1>
+        </div>
+
         <nav class="nav">
-            <ul>
-                <li><a href="#profile">プロフィール</a></li>
-                <li><a href="#hobbies">趣味</a></li>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Profile</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="anime.html">Anime & Manga</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <h1>わたしの自己紹介サイト</h1>
     </header>
+
+    <!-- メイン -->
     <main>
-        <section id="profile">
-            <h2>プロフィール</h2>
-            <p>こんにちは、わたしは[あなたの名前]です。これはわたしの自己紹介サイトです。</p>
+
+        <!-- メインビジュアル -->
+        <section class="hero">
+
+            <div class="hero-content">
+                <h2 class="hero-title">RYOTA'S PORTFOLIO</h2>
+
+                <a href="#about-site" class="hero-button">
+                    Explore
+                </a>
+            </div>
+
         </section>
-        <section id="hobbies">
-            <h2>趣味</h2>
-            <ul>
-                <li>読書</li>
-                <li>旅行</li>
-                <li>プログラミング</li>
+
+
+        <!-- このサイトについて -->
+        <section class="about-site" id="about-site">
+
+            <h2 class="section-title">About This Site</h2>
+
+            <p class="about-text">
+                このサイトでは、私のプロフィールや好きなゲーム、
+                音楽、アニメ・漫画について紹介しています。
+                ぜひご覧ください。
+            </p>
+
+        </section>
+
+
+        <!-- ページ紹介 -->
+        <section class="menu">
+
+            <h2 class="section-title">Menu</h2>
+
+            <div class="menu-cards">
+
+                <a href="about.html" class="menu-card">
+                    <h3>Profile</h3>
+                    <p>自己紹介</p>
+                </a>
+
+                <a href="games.html" class="menu-card">
+                    <h3>Games</h3>
+                    <p>好きなゲーム</p>
+                </a>
+
+                <a href="music.html" class="menu-card">
+                    <h3>Music</h3>
+                    <p>好きな音楽</p>
+                </a>
+
+                <a href="anime.html" class="menu-card">
+                    <h3>Anime & Manga</h3>
+                    <p>好きなアニメ・漫画</p>
+                </a>
+
+                <a href="contact.html" class="menu-card">
+                    <h3>Contact</h3>
+                    <p>お問い合わせ</p>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- お知らせ -->
+        <section class="news">
+
+            <h2 class="section-title">Latest Updates</h2>
+
+            <ul class="news-list">
+                <li>2026.06.27　Portfolio Site Open</li>
             </ul>
+
         </section>
+
     </main>
+
+
+    <!-- フッター -->
     <footer class="footer">
-        <p>&copy; 2024 わたしの自己紹介サイト</p>
+
+        <p>&copy; 2026 Ryota's Portfolio</p>
+
     </footer>
-    <script src="js/scripts.js"></script>
+
+    <script src="js/main.js"></script>
+
 </body>
 </html>
