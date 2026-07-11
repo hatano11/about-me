@@ -234,7 +234,7 @@ ul{
 
     color:#FCEE09;
 
-    letter-spacing:6px;
+    letter-spacing:4px;
 
     margin-bottom:40px;
 
@@ -311,12 +311,8 @@ ul{
 ========================== */
 
 section{
-
-    width:90%;
-    max-width:1100px;
-
+    width:min(90%,1100px);
     margin:100px auto;
-
 }
 
 .section-title{
@@ -362,7 +358,7 @@ section{
 
     transform:translateY(-50%);
 
-    width:120px;
+    width:60px;
 
     height:2px;
 
@@ -644,7 +640,6 @@ img:hover{
 
 }
 
-
 /* ==========================
    Responsive
 ========================== */
@@ -652,35 +647,74 @@ img:hover{
 @media (max-width:768px){
 
     .header{
-
         flex-direction:column;
-
         gap:20px;
-
         padding:20px;
+        text-align:center;
+    }
 
+    .logo h1{
+        font-size:1.2rem;
+        letter-spacing:2px;
     }
 
     .nav-list{
-
         display:grid;
-
         grid-template-columns:repeat(2,1fr);
-
         gap:12px;
-
         width:100%;
-
-        text-align:center;
-
     }
 
-    .nav-list li{
-
-        width:100%;
-
+    .hero{
+        height:70vh;
     }
 
+    .hero-title{
+        font-size:2.5rem;
+        letter-spacing:2px;
+        word-break:break-word;
+    }
+
+    .hero-button{
+        padding:14px 35px;
+    }
+
+    section{
+        width:95%;
+        margin:60px auto;
+    }
+
+    .section-title{
+        font-size:1.5rem;
+    }
+
+    .section-title::after{
+        width:50px;
+    }
+
+    .about-site,
+    .card,
+    .contact-form{
+        padding:25px;
+    }
+
+    .menu-cards,
+    .game-grid,
+    .music-grid,
+    .anime-grid{
+        grid-template-columns:1fr;
+    }
+
+    .game-card img,
+    .music-card img,
+    .anime-card img{
+        height:180px;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+    }
 }
 
 /* ==========================
