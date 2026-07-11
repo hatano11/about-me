@@ -1119,6 +1119,20 @@ a:hover{
 
     display:block;
 
+    border:2px solid #333;
+
+    transition:.3s;
+
+}
+
+.music-card:hover img{
+
+    border-color:#FF2A9D;
+
+    box-shadow:
+        0 0 15px #FF2A9D,
+        0 0 35px rgba(255,42,157,.6);
+
 }
 
 .music-content{
