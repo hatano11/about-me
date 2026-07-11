@@ -403,19 +403,11 @@ section{
    Menu
 ========================== */
 
-.menu-cards{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-    gap:30px;
-
-}
-
 .menu-card{
 
-    background:#181818;
+    position:relative;
+
+    overflow:hidden;
 
     border:2px solid #FCEE09;
 
@@ -424,6 +416,12 @@ section{
     text-align:center;
 
     transition:.3s;
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
 
     clip-path:polygon(
         15px 0,
@@ -436,40 +434,76 @@ section{
 
 }
 
-.menu-card h3{
+.menu-card::before{
 
-    color:#FCEE09;
+    content:"";
 
-    margin-bottom:15px;
+    position:absolute;
 
-    font-size:1.5rem;
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+
+    transition:.3s;
 
 }
 
+.menu-card:hover::before{
+
+    background:rgba(0,0,0,.35);
+
+}
+
+.menu-card h3,
 .menu-card p{
 
-    color:#cccccc;
+    position:relative;
+
+    z-index:1;
+
+}
+
+.menu-card:nth-child(1){
+
+    background-image:url("../images/profile.jpg");
+
+}
+
+.menu-card:nth-child(2){
+
+    background-image:url("../images/games.jpg");
+
+}
+
+.menu-card:nth-child(3){
+
+    background-image:url("../images/music.jpg");
+
+}
+
+.menu-card:nth-child(4){
+
+    background-image:url("../images/anime.jpg");
+
+}
+
+.menu-card:nth-child(5){
+
+    background-image:url("../images/contact.jpg");
 
 }
 
 .menu-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-10px) scale(1.03);
 
     border-color:#00F0FF;
 
     box-shadow:
-    0 0 15px #00F0FF,
-    0 0 40px rgba(0,240,255,.6);
+        0 0 15px #00F0FF,
+        0 0 40px rgba(0,240,255,.6);
 
 }
-
-.menu-card:hover h3{
-
-    color:#00F0FF;
-
-}
-
 
 /* ==========================
    News
