@@ -1170,5 +1170,114 @@ a:hover{
 }
 
 /* ==========================
+   Anime & Manga
+========================== */
+
+.anime-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+.anime-card{
+
+    background:#181818;
+
+    border:2px solid #333;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    clip-path:polygon(
+        15px 0,
+        100% 0,
+        100% calc(100% - 15px),
+        calc(100% - 15px) 100%,
+        0 100%,
+        0 15px
+    );
+
+}
+
+.anime-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#FCEE09;
+
+    box-shadow:
+        0 0 15px #FCEE09,
+        0 0 35px rgba(252,238,9,.5);
+
+}
+
+.anime-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    display:block;
+
+    border:2px solid #333;
+
+    transition:.3s;
+
+}
+
+.anime-card:hover img{
+
+    border-color:#FCEE09;
+
+    box-shadow:
+        0 0 15px #FCEE09,
+        0 0 35px rgba(252,238,9,.6);
+
+}
+
+.anime-content{
+
+    padding:20px;
+
+}
+
+.anime-content h3{
+
+    color:#FCEE09;
+
+    margin-bottom:15px;
+
+    font-size:1.6rem;
+
+}
+
+.anime-content p{
+
+    color:#dddddd;
+
+    line-height:1.8;
+
+}
+
+@media (max-width:768px){
+
+    .anime-card img{
+
+        height:180px;
+
+    }
+
+}
+
+/* ==========================
    End
 ========================== */
