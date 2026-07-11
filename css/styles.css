@@ -407,21 +407,27 @@ section{
 
     position:relative;
 
+    min-height:220px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
     overflow:hidden;
 
     border:2px solid #FCEE09;
-
-    padding:40px 25px;
-
-    text-align:center;
-
-    transition:.3s;
 
     background-size:cover;
 
     background-position:center;
 
     background-repeat:no-repeat;
+
+    transition:.3s;
 
     clip-path:polygon(
         15px 0,
@@ -442,15 +448,9 @@ section{
 
     inset:0;
 
-    background:rgba(0,0,0,.65);
+    background:rgba(0,0,0,.55);
 
-    transition:.3s;
-
-}
-
-.menu-card:hover::before{
-
-    background:rgba(0,0,0,.35);
+    z-index:0;
 
 }
 
@@ -463,39 +463,25 @@ section{
 
 }
 
-.menu-card:nth-child(1){
+.menu-card h3{
 
-    background-image:url("../images/profile.jpg");
+    color:#FCEE09;
 
-}
+    margin-bottom:10px;
 
-.menu-card:nth-child(2){
-
-    background-image:url("../images/games.jpg");
+    font-size:1.5rem;
 
 }
 
-.menu-card:nth-child(3){
+.menu-card p{
 
-    background-image:url("../images/music.jpg");
-
-}
-
-.menu-card:nth-child(4){
-
-    background-image:url("../images/anime.jpg");
-
-}
-
-.menu-card:nth-child(5){
-
-    background-image:url("../images/contact.jpg");
+    color:#ffffff;
 
 }
 
 .menu-card:hover{
 
-    transform:translateY(-10px) scale(1.03);
+    transform:translateY(-10px);
 
     border-color:#00F0FF;
 
@@ -503,6 +489,32 @@ section{
         0 0 15px #00F0FF,
         0 0 40px rgba(0,240,255,.6);
 
+}
+
+.menu-card:hover::before{
+
+    background:rgba(0,0,0,.35);
+
+}
+
+.menu-card:nth-child(1){
+    background-image:url("../images/profile.jpg");
+}
+
+.menu-card:nth-child(2){
+    background-image:url("../images/games.jpg");
+}
+
+.menu-card:nth-child(3){
+    background-image:url("../images/music.jpg");
+}
+
+.menu-card:nth-child(4){
+    background-image:url("../images/anime.jpg");
+}
+
+.menu-card:nth-child(5){
+    background-image:url("../images/contact.jpg");
 }
 
 /* ==========================
