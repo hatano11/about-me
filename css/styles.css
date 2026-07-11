@@ -1059,6 +1059,102 @@ a:hover{
     }
 
 }
+
+/* ==========================
+   Music
+========================== */
+
+.music-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+.music-card{
+
+    background:#181818;
+
+    border:2px solid #333;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    clip-path:polygon(
+        15px 0,
+        100% 0,
+        100% calc(100% - 15px),
+        calc(100% - 15px) 100%,
+        0 100%,
+        0 15px
+    );
+
+}
+
+.music-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#FF2A9D;
+
+    box-shadow:
+        0 0 15px #FF2A9D,
+        0 0 35px rgba(255,42,157,.5);
+
+}
+
+.music-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.music-content{
+
+    padding:20px;
+
+}
+
+.music-content h3{
+
+    color:#FCEE09;
+
+    margin-bottom:15px;
+
+    font-size:1.6rem;
+
+}
+
+.music-content p{
+
+    color:#dddddd;
+
+    line-height:1.8;
+
+}
+
+@media (max-width:768px){
+
+    .music-card img{
+
+        height:180px;
+
+    }
+
+}
+
 /* ==========================
    End
 ========================== */
