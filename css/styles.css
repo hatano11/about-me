@@ -1279,5 +1279,156 @@ a:hover{
 }
 
 /* ==========================
+   Contact
+========================== */
+
+.contact-form{
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    padding:40px;
+
+    background:#181818;
+
+    border:2px solid #333;
+
+    clip-path:polygon(
+        15px 0,
+        100% 0,
+        100% calc(100% - 15px),
+        calc(100% - 15px) 100%,
+        0 100%,
+        0 15px
+    );
+
+}
+
+.contact-form label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#FCEE09;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    margin-bottom:25px;
+
+    padding:15px;
+
+    font-size:1rem;
+
+    font-family:inherit;
+
+    color:#ffffff;
+
+    background:#111111;
+
+    border:2px solid #333;
+
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:#00F0FF;
+
+    box-shadow:
+        0 0 10px #00F0FF,
+        0 0 25px rgba(0,240,255,.5);
+
+}
+
+.contact-form textarea{
+
+    min-height:180px;
+
+    resize:vertical;
+
+}
+
+.contact-form button{
+
+    display:block;
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:1rem;
+
+    font-family:inherit;
+
+    font-weight:bold;
+
+    color:#111;
+
+    background:#FCEE09;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    clip-path:polygon(
+        12px 0,
+        100% 0,
+        100% calc(100% - 12px),
+        calc(100% - 12px) 100%,
+        0 100%,
+        0 12px
+    );
+
+}
+
+.contact-form button:hover{
+
+    background:#FF2A9D;
+
+    color:#ffffff;
+
+    box-shadow:
+        0 0 15px #FF2A9D,
+        0 0 35px rgba(255,42,157,.6);
+
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+
+    color:#777777;
+
+}
+
+@media (max-width:768px){
+
+    .contact-form{
+
+        padding:25px;
+
+        margin:20px;
+
+    }
+
+}
+
+/* ==========================
    End
 ========================== */
