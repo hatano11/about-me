@@ -663,47 +663,26 @@ img:hover{
 
     .nav-list{
 
-        flex-wrap:wrap;
+        display:grid;
 
-        justify-content:center;
+        grid-template-columns:repeat(2,1fr);
 
-        gap:15px;
+        gap:12px;
 
-    }
+        width:100%;
 
-    .hero-title{
-
-        font-size:2.8rem;
-
-        letter-spacing:3px;
+        text-align:center;
 
     }
 
-    .hero-button{
+    .nav-list li{
 
-        padding:14px 35px;
-
-    }
-
-    .section-title{
-
-        font-size:1.5rem;
-
-    }
-
-    .about-site{
-
-        padding:30px;
-
-    }
-
-    .menu-cards{
-
-        grid-template-columns:1fr;
+        width:100%;
 
     }
 
 }
+
 /* ==========================
    Contact Form
 ========================== */
@@ -822,7 +801,6 @@ img:hover{
 
 }
 
-
 /* ==========================
    Scrollbar
 ========================== */
@@ -850,7 +828,6 @@ img:hover{
     background:#00F0FF;
 
 }
-
 
 /* ==========================
    Table
@@ -883,7 +860,6 @@ td{
     background:#1A1A1A;
 
 }
-
 
 /* ==========================
    List
@@ -918,7 +894,6 @@ td{
     transform:translateX(8px);
 
 }
-
 
 /* ==========================
    Small Effects
@@ -1446,6 +1421,3 @@ a:hover{
 /* ==========================
    End
 ========================== */
-*{
-    outline: 1px solid red;
-}
