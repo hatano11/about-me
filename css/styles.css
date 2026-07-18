@@ -16,37 +16,13 @@ body{
 
     font-family:"Chakra Petch",sans-serif;
 
-    background-color:#0D0D0D;
-
     color:#ffffff;
 
     line-height:1.8;
 
     overflow-x:hidden;
 
-    background-image:
-    linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
-
-    background-size:40px 40px;
-
-    animation:gridMove 25s linear infinite;
-
-}
-
-@keyframes gridMove{
-
-    from{
-
-        background-position:0 0;
-
-    }
-
-    to{
-
-        background-position:40px 40px;
-
-    }
+    background-color:#0D0D0D;
 
 }
 
@@ -1507,6 +1483,75 @@ a:hover{
     text-shadow:
         0 0 10px #FCEE09,
         0 0 20px #FCEE09;
+
+}
+
+/* ==========================
+   Page Background
+========================== */
+
+.home{
+
+    background:
+        linear-gradient(rgba(13,13,13,.75),rgba(13,13,13,.75)),
+        url("../images/hero.jpg");
+
+}
+
+.profile{
+
+    background:
+        linear-gradient(rgba(13,13,13,.82),rgba(13,13,13,.82)),
+        url("../images/profile-bg.jpg");
+
+}
+
+.games{
+
+    background:
+        linear-gradient(rgba(13,13,13,.82),rgba(13,13,13,.82)),
+        url("../images/games-bg.jpg");
+
+}
+
+.music{
+
+    background:
+        linear-gradient(rgba(13,13,13,.82),rgba(13,13,13,.82)),
+        url("../images/music-bg.jpg");
+
+}
+
+.anime{
+
+    background:
+        linear-gradient(rgba(13,13,13,.82),rgba(13,13,13,.82)),
+        url("../images/anime-bg.jpg");
+
+}
+
+.contact{
+
+    background:
+        linear-gradient(rgba(13,13,13,.82),rgba(13,13,13,.82)),
+        url("../images/contact-bg.jpg");
+
+}
+
+.home,
+.profile,
+.games,
+.music,
+.anime,
+.contact{
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
 
 }
 
