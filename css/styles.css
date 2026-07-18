@@ -1483,7 +1483,7 @@ a:hover{
 .home{
 
     background:
-        linear-gradient(rgba(13,13,13,.75),rgba(13,13,13,.75)),
+        linear-gradient(rgba(13,13,13,.45),rgba(13,13,13,.45)),
         url("../images/hero.jpg");
 
 }
@@ -1491,7 +1491,7 @@ a:hover{
 .profile{
 
     background:
-        linear-gradient(rgba(13,13,13,.82),rgba(13,13,13,.82)),
+        linear-gradient(rgba(13,13,13,.45),rgba(13,13,13,.45)),
         url("../images/profile-bg.jpg");
 
 }
@@ -1499,7 +1499,7 @@ a:hover{
 .games{
 
     background:
-        linear-gradient(rgba(13,13,13,.82),rgba(13,13,13,.82)),
+        linear-gradient(rgba(13,13,13,.45),rgba(13,13,13,.45)),
         url("../images/games-bg.jpg");
 
 }
@@ -1507,7 +1507,7 @@ a:hover{
 .music{
 
     background:
-        linear-gradient(rgba(13,13,13,.82),rgba(13,13,13,.82)),
+        linear-gradient(rgba(13,13,13,.45),rgba(13,13,13,.45)),
         url("../images/music-bg.jpg");
 
 }
@@ -1515,7 +1515,7 @@ a:hover{
 .anime{
 
     background:
-        linear-gradient(rgba(13,13,13,.82),rgba(13,13,13,.82)),
+        linear-gradient(rgba(13,13,13,.45),rgba(13,13,13,.45)),
         url("../images/anime-bg.jpg");
 
 }
@@ -1523,7 +1523,7 @@ a:hover{
 .contact{
 
     background:
-        linear-gradient(rgba(13,13,13,.82),rgba(13,13,13,.82)),
+        linear-gradient(rgba(13,13,13,.45),rgba(13,13,13,.45)),
         url("../images/contact-bg.jpg");
 
 }
